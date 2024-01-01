@@ -1,4 +1,4 @@
-const { resData } = require("../../constants/responseFormat");
+const { ResData } = require("../../class/responseFormat");
 
 const thalaControllerV1 = (req, res) => {
   let message, imgLink;
@@ -16,13 +16,14 @@ const thalaControllerV1 = (req, res) => {
       "https://knowyourmeme.com/memes/jay-shahs-rude-hand-gesture/photos";
   }
 
-  resData["success"] = true;
-  resData["statusCode"] = 200;
-  resData["apiVersion"] = req.baseUrl;
-  resData["data"]["json"]["resMessage"] = message;
-  resData["data"]["json"]["imageUrl"] = imgLink;
+  let resObject = new ResData();
+  resObject.resData["success"] = true;
+  resObject.resData["statusCode"] = 200;
+  resObject.resData["apiVersion"] = req.baseUrl;
+  resObject.resData["data"]["json"]["resMessage"] = message;
+  resObject.resData["data"]["json"]["imageUrl"] = imgLink;
 
-  return res.status(200).json(resData);
+  return res.status(200).json(resObject.getJsonData());
 };
 
 module.exports = { thalaControllerV1 };
