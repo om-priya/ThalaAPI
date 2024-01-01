@@ -1,16 +1,16 @@
 {
   "name": "thalaapi",
   "version": "1.0.0",
-  "description": "This API is developed by sher and let user decide whether they have the divine protection of THALA or not",
+  "description": "This API is developed by sher(Om Priya) and let user decide whether they have the divine protection of THALA or not",
   "main": "app.js",
   "scripts": {
     "dev":"nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Sher Om Priya",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
+    "express": "^4.18.2", 
     "nodemon": "^3.0.2"
   }
 }
