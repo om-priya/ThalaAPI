@@ -4,7 +4,7 @@ class ResData {
     statusCode: "",
     license: "https://om-portfolio-fawn.vercel.app/",
     description:
-      "This is response data to shaowcase whether you are protected by thala or not",
+      "This is response data to showcase whether you are protected by thala or not",
     developerName: "Sher Om Priya",
     apiVersion: "",
     errorInfo: {
