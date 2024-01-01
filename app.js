@@ -6,10 +6,6 @@ const { thalaRouterV1 } = require("./router/v1/thalaRouterV1");
 const { thalaRouterV2 } = require("./router/v2/thalaRouterV2");
 const { ResData } = require("./class/responseFormat");
 
-app.get("/", (req, res) => {
-  res.send("I am Live");
-});
-
 app.use("/api/v1", thalaRouterV1);
 app.use("/api/v2", thalaRouterV2);
 
