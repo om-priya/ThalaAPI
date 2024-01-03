@@ -9,14 +9,14 @@ const { thalaRouterV1 } = require("./router/v1/thalaRouterV1");
 const { thalaRouterV2 } = require("./router/v2/thalaRouterV2");
 const { ResData } = require("./class/responseFormat");
 const { optionsV1 } = require("./apiDocsOptions/v1/optionsV1");
-const { optionsV2 } = require("./apiDocsOptions/v2/optionsV2");
+// const { optionsV2 } = require("./apiDocsOptions/v2/optionsV2");
 
 app.use(cors());
 // Doc API Path
 const spacsv1 = swaggerjsdoc(optionsV1);
 app.use("/api/v1/api-docs/", swaggerui.serve, swaggerui.setup(spacsv1));
-const spacsv2 = swaggerjsdoc(optionsV2);
-app.use("/api/v2/api-docs/", swaggerui.serve, swaggerui.setup(spacsv2));
+// const spacsv2 = swaggerjsdoc(optionsV2);
+// app.use("/api/v2/api-docs/", swaggerui.serve, swaggerui.setup(spacsv2));
 
 // Different Api versions
 app.use("/api/v1", thalaRouterV1);
