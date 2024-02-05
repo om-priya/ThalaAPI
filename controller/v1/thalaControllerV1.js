@@ -13,7 +13,7 @@ const thalaControllerV1 = (req, res) => {
   } else {
     message = "Script Likhna Abhi Baaki Hai";
     imgLink =
-      "https://knowyourmeme.com/memes/jay-shahs-rude-hand-gesture/photos";
+      "https://i.kym-cdn.com/photos/images/original/002/597/632/0c7.png";
   }
 
   let resObject = new ResData();
